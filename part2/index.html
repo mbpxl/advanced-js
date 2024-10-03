@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Отзывы</title>
+  <style>
+    #reviewsContainer {
+      margin-top: 20px;
+    }
+
+    .review {
+      padding: 10px;
+      border: 1px solid #ddd;
+      margin-bottom: 10px;
+      border-radius: 5px;
+    }
+
+    .error {
+      color: red;
+    }
+  </style>
+</head>
+
+<body>
+  <h1>Оставьте свой отзыв</h1>
+  <textarea id="reviewInput" rows="4" cols="50" placeholder="Введите ваш отзыв..."></textarea><br>
+  <button id="submitReview">Отправить отзыв</button>
+  <p id="error" class="error"></p>
+
+  <div id="reviewsContainer">
+  </div>
+
+  <script src="review-system.js"></script>
+</body>
+
+</html>
